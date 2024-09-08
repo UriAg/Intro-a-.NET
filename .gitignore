@@ -1,0 +1,22 @@
+# Archivos de compilación y carpetas generadas
+bin/
+obj/
+
+# Paquetes NuGet descargados localmente
+packages/
+*.nupkg
+*.snupkg
+
+# Carpetas de publicación y paquetes de salida
+publish/
+out/
+
+# Archivos generados por el entorno de desarrollo
+.vscode/
+.vs/
+*.user
+*.suo
+wwwroot/
+
+# Archivos de configuración de servicio
+appsettings*.json

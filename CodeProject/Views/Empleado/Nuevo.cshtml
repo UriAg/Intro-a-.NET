@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Agregar nuevo";
+}
+@model CodeProject.Models.Empleado
+
+<div class="row">
+
+    <div class="col-sm-8 offset-sm-2">
+        <h2>Nuevo empleado</h2>
+        <form asp-controller="Empleado" asp-action="Nuevo" method="post">
+            <div class="mb-3">
+                <label for="full-name-input">Nombre Completo</label>
+                <input class="form-control" asp-for="NombreCompleto" type="text" id="full-name-input"/>
+                
+                <label for="contract-date-input">Fecha Contrato</label>
+                <input class="form-control" asp-for="FechaContrato" type="date" id="contract-date-input"/>
+                
+                <label for="email-input">Correo</label>
+                <input class="form-control" asp-for="Correo" type="email" id="email-input"/>
+                
+                <div class="w-100">
+                    <input class="form-check-label" asp-for="IsActive" type="checkbox" id="is-active-input"/>
+                    <label class="form-check-label" for="is-active-input">Activo</label>
+                </div>
+            
+                <button class="btn btn-primary" type="submit">Guardar</button>
+                <a asp-controller="Empleado" asp-action="Lista" class="btn btn-warning">Ir a la lista</a>
+            </div>
+        </form>
+        
+    </div>
+
+</div>
